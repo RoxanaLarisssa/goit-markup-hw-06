@@ -448,6 +448,70 @@ text-transform: uppercase;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*.... Footer-subscribe...*/
+
+
+.form-footer {
+  padding-left: 93px;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+
+}
+
+.form-text {
+  color: #FFF;
+  font-family: var(--text-font-family);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: #ffffff;
+
+}
+.footer-form-btn {
+  min-width: 200px;
+  font-family: var(--text-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  background-color:#2196F3;
+  border: none;
+  border-radius: 4px;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+padding: 10px;
+margin-left: 12px;
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: var(--social-icon-hover-color);
+}
+.footer-icon {
+ fill: #FFF;
+ margin-left: 13px;
+
+}
+
+
 /*!------------------PORTOFOLIO--------------------!*/
 
 .main-portofolio {
@@ -601,6 +665,22 @@ text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*Formular Modal */
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.input-icon svg{
+  position: absolute;
+  color: black;
+  top:50px;
+  left:12px;
+
 }
 
 
