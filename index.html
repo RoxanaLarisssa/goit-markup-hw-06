@@ -432,16 +432,20 @@
                 <svg class="modal-btn" width="18" height="18">
                     <use href="./icons/symbol-defs.svg#icon-close-btn"></use>
                 </svg></button>
-        <form class="form">
+<!-- Form modal -->
+
+<p class="form-tittle"> Leave your information and we'll call you back</p>
+<form class="form" name="order" autocomplete="off" novalidate>
             <div class="form-group">
-                <label for="name">name</label>
-                <input type="name" id="name">
-                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                <label class="modal-label" for="username">Name</label>
+                <div class="input-icon">
+                    <input class="input-form" id="username" name="username" type="text">
+                    <svg class="form-icons" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                     fill="currentColor">
                     <g clip-path="url(#clip0_1_3124)">
                         <path
                             d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
-                            fill="#2196F3" />
+                            fill="currentColor" />
                     </g>
                     <defs>
                         <clipPath id="clip0_1_3124">
@@ -449,12 +453,13 @@
                         </clipPath>
                     </defs>
                 </svg>
-        
+        </div>
             </div>
-            <label class="form-group">
-                <span>Telephone</span>
-                <input type="tel" id="phone" />
-                <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+            <div class="form-group">
+                <label class="modal-label" for="phone">Phone</label>
+                <div class="input-icon">
+                    <input class="input-form" type="tel" id="phone" name="phone" />
+                    <svg class="form-icons" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                     fill="currentColor">
                     <g clip-path="url(#clip0_1_3130)">
                         <path
@@ -467,7 +472,35 @@
                         </clipPath>
                     </defs>
                 </svg>
-            </label>
+            </div>
+            </div>
+            <div class="user-contact">
+                <label class="modal-label" for="email"> Email</label>
+                <div class="input-icon">
+                    <input class="input-form" id="email" name="email" type="text">
+                    <svg class="form-icons" width="18" height="24">
+                        <use href="./icons/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="textarea-user">
+                <label class="modal-label" for="user-comment">Comment</label>
+                <textarea class="label-comment" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+            </div>
+            <div class="checkbox">
+                <input class="input-checkbox visually-hidden" id="user-privacy" name="user-privacy" type="checkbox" value="true">
+                <label class="checkbox-label" for="user-privacy">
+                    <span class="checkbox-block">
+                        <svg class="checkbox-icon" width="16" height="15">
+                            <use href="./icons/symbol-defs.svg#icon-Vector"></use>
+            
+                        </svg>
+                    </span>
+                    I agree with the letter and accept the
+                    <a class="privacy-policy" href>Terms and Conditions</a>
+                </label>
+            </div>
+            <button class="send" type="button">Send</button>
         </form>
         </div>
     </div>
