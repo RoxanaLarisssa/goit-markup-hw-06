@@ -67,6 +67,7 @@ a {
 }
 
 /*--------------HEADER-----------*/
+/*----Mobile First-----*/
 .header {
   display: flex;
   justify-content: space-around;
@@ -371,10 +372,14 @@ a {
 .customers-list-icons {
   display: flex;
   gap: 30px;
+  margin-left: 250px;
+  margin-right: 215px;
+  align-items: center;
+  justify-content: center;
 }
 .ctmrs-item-icons {
-  width: calc((100% - 120px) / 6);
-  height: 60px;
+  height: 92px;
+
 }
 .custmers-icons {
   border: 1px solid #8e8f99;
@@ -663,7 +668,7 @@ margin-left: 12px;
   left: 50%;
   width: 528px;
   min-height: 581px;
-padding: 40px;;
+  padding: 40px;;
   border-radius: 4px;
   background-color: #FFF;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -701,7 +706,7 @@ padding: 40px;;
 .close-btn:hover,
 .close-btn:focus {
   border: none;
- fill: #FFF;
+  fill: #FFF;
   background: #006994;
 }
 /*Formular Modal */
@@ -846,5 +851,14 @@ padding: 40px;;
 .send:focus {
   background: #006994;
 }
+
+  /* Design tabletă */
+@media screen and (min-width:768px ) {
+ 
+}
+ /* Design desktop */
+@media screen and (min-width: 1280px) {
+   
+  }
 
 
